@@ -1,0 +1,23 @@
+---
+title: "MECH 691 S - Impact bejavior of Composite Sandwich Panels"
+author: "Mohammad Ghadri - 40196144"
+date: 02/12/2023 
+output: 
+  html_notebook:
+          toc: yes
+          toc_float: yes
+---
+```{r}
+df0 = read.csv("Impact_test.csv")
+# View(df0)
+head(df0,1)
+str(df0)
+df0[!complete.cases(df0),]
+summary(df0) # to check columns with NA and the table of factors 
+dim(df0)
+library(skimr)
+skim(df0)
+# library(DataExplorer)
+# DataExplorer::create_report(df0)
+```
+
