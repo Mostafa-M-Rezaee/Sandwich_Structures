@@ -9,7 +9,6 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
-<meta name="author" content="Mohammad Ghadri - 40196144" />
 
 <meta name="date" content="2023-02-12" />
 
@@ -2885,7 +2884,6 @@ border-radius: 0px;
 
 <h1 class="title toc-ignore">MECH 691 S - Impact bejavior of Composite
 Sandwich Panels</h1>
-<h4 class="author">Mohammad Ghadri - 40196144</h4>
 <h4 class="date">02/12/2023</h4>
 
 </div>
@@ -2894,110 +2892,24 @@ Sandwich Panels</h1>
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGYwID0gcmVhZC5jc3YoXCJJbXBhY3RfdGVzdC5jc3ZcIilcbiMgVmlldyhkZjApXG5oZWFkKGRmMCwxKVxuYGBgIn0= -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGYwID0gcmVhZC5jc3YoXCJJbXBhY3RfdGVzdC5jc3ZcIilcbiMgVmlldyhkZjApXG5oZWFkKGRmMCwxKVxuc3RyKGRmMClcbmRmMFshY29tcGxldGUuY2FzZXMoZGYwKSxdXG5zdW1tYXJ5KGRmMCkgIyB0byBjaGVjayBjb2x1bW5zIHdpdGggTkEgYW5kIHRoZSB0YWJsZSBvZiBmYWN0b3JzIFxuZGltKGRmMClcbmxpYnJhcnkoc2tpbXIpXG5za2ltKGRmMClcbiMgbGlicmFyeShEYXRhRXhwbG9yZXIpXG4jIERhdGFFeHBsb3Jlcjo6Y3JlYXRlX3JlcG9ydChkZjApXG5gYGAifQ== -->
 <pre class="r"><code>df0 = read.csv(&quot;Impact_test.csv&quot;)
 # View(df0)
-head(df0,1)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibnJvdyI6MSwibmNvbCI6MTEsInN1bW1hcnkiOnsiRGVzY3JpcHRpb24iOlsiZGYgWzEgw5cgMTFdIl19fSwicmRmIjoiSDRzSUFBQUFBQUFBQm1XU3owN0NRQkRHMTBJMUZFVWlSeThtSGpRbWxCZzhlTkJvS1Z2WXVMU2tMUWlKU1ZPaEtvb3RnUkk5ZWZMbXdRZndDVHo3QnZvSTN2UTVOSHJ3ejdaMEs5Uk5OcDN2dC9PMU05TlZpNDA4MStBQUFERVFaeGdRWTBrSTJKb3VaVGNCSVVSTWdUaEllTTlMa3BRaFFaTHM5TmpCOU5JZXJCc2JKRXA1ZE9majdmSDJZUFU5a2hYRGZzbzRZc1IxYXRxdExoRFAyMU9vNzU1dkhxNi8xa0tkMnpxOStueGREclVWeTNzcjFLM01wTTRCdWtaNmU4Vit1ZWNQSXoyeHRubHVEWUt5a2dGTWFrS2xpcUVoQ3hVWW9JUmVSdUtlRERXTjlveUZKbFNwNGtTbFVsVmtLT3VVeEN0Q21Ec3JxRkRBeGo1RXBiSWVzTVZDRFdPb0c3QlJ4WXFHNnREUXloQmpZOHlXUmpMU0VUSFdJVlpFcERjRG5wS1EvSittaTBpU0RDUkgrVHlVb1ZwcUdrSkJVOVFDTEVZR2tPZzdGendkd3B4LzRPL0pLYlc2NW9CT2lVS3ViYm9tZjlRblhxSytJNVlacCtkMkhKdVlHTy9Lc0JIelZEOEM1b2UyVjBVNzJ6b1oybWRaNzE1d2Y5V01WeGJHeWRFbm1aL2dWU3o5TlpaOTNMRXRXbnZYUExTNmRIU2tXNzladnRmdjJDN3RoTkFCN3pxdVNmTzRsdE9seE84TmZQOEN0ajFrNWlrREFBQT0ifQ== -->
-<div data-pagedtable="false">
-<script data-pagedtable-source type="application/json">
-{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["SAMPLE_NAME"],"name":[1],"type":["chr"],"align":["left"]},{"label":["THICKNESS"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["LAYERS"],"name":[3],"type":["chr"],"align":["left"]},{"label":["COMPONENTS"],"name":[4],"type":["chr"],"align":["left"]},{"label":["MASS"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["AREAL_WEIGHT"],"name":[6],"type":["dbl"],"align":["right"]},{"label":["BULLET_EXPLOSIVE_SHELL_MASS"],"name":[7],"type":["dbl"],"align":["right"]},{"label":["INITIAL_VELOCITY"],"name":[8],"type":["dbl"],"align":["right"]},{"label":["FINAL_VELOCITY"],"name":[9],"type":["dbl"],"align":["right"]},{"label":["DIFF_IN_VELOCITY"],"name":[10],"type":["dbl"],"align":["right"]},{"label":["ENERGY_ABSORBED"],"name":[11],"type":["dbl"],"align":["right"]}],"data":[{"1":"KEV_4","2":"1.56","3":"L_4","4":"C1","5":"64.29","6":"1780.886","7":"15.618","8":"168.1","9":"152.6","10":"15.5","11":"29.15404","_rn_":"1"}],"options":{"columns":{"min":{},"max":[10],"total":[11]},"rows":{"min":[10],"max":[10],"total":[1]},"pages":{}}}
-  </script>
-</div>
-<!-- rnb-frame-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3RyKGRmMClcbmBgYCJ9 -->
-<pre class="r"><code>str(df0)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiJ2RhdGEuZnJhbWUnOlx0MjEgb2JzLiBvZiAgMTEgdmFyaWFibGVzOlxuICQgU0FNUExFX05BTUUgICAgICAgICAgICAgICAgOiBjaHIgIFwiIEtFVl80XCIgXCIgS0VWXzRcIiBcIiBLRVZfNFwiIFwiM0RfQlwiIC4uLlxuICQgVEhJQ0tORVNTICAgICAgICAgICAgICAgICAgOiBudW0gIDEuNTYgMS41NiAxLjU2IDkuNDEgOS40MSAuLi5cbiAkIExBWUVSUyAgICAgICAgICAgICAgICAgICAgIDogY2hyICBcIkxfNFwiIFwiTF80XCIgXCJMXzRcIiBcIkxfMVwiIC4uLlxuICQgQ09NUE9ORU5UUyAgICAgICAgICAgICAgICAgOiBjaHIgIFwiQzFcIiBcIkMxXCIgXCJDMVwiIFwiQzJcIiAuLi5cbiAkIE1BU1MgICAgICAgICAgICAgICAgICAgICAgIDogbnVtICA2NC4zIDY1LjMgNjYuMyA1Mi44IDUyLjggLi4uXG4gJCBBUkVBTF9XRUlHSFQgICAgICAgICAgICAgICA6IG51bSAgMTc4MSAxODA5IDE4MzYgNTI4MCA1MjgwIC4uLlxuICQgQlVMTEVUX0VYUExPU0lWRV9TSEVMTF9NQVNTOiBudW0gIDE1LjYgMTUuNSAxNS42IDE1LjUgMTUuNiAuLi5cbiAkIElOSVRJQUxfVkVMT0NJVFkgICAgICAgICAgIDogbnVtICAxNjggMTU0IDE1NyAxNzAgMTY4IC4uLlxuICQgRklOQUxfVkVMT0NJVFkgICAgICAgICAgICAgOiBudW0gIDE1MyAxNDIgMTQwIDE2NSAxNjMgLi4uXG4gJCBESUZGX0lOX1ZFTE9DSVRZICAgICAgICAgICA6IG51bSAgMTUuNSAxMi42IDE2LjggNS40IDQuOCA0LjQgMTEuNSAxMi45IDExLjMgMTggLi4uXG4gJCBFTkVSR1lfQUJTT1JCRUQgICAgICAgICAgICA6IG51bSAgMjkuMiAyMS45IDI5LjMgMTAuNiA5LjMgLi4uXG4ifQ== -->
-<pre><code>&#39;data.frame&#39;:   21 obs. of  11 variables:
- $ SAMPLE_NAME                : chr  &quot; KEV_4&quot; &quot; KEV_4&quot; &quot; KEV_4&quot; &quot;3D_B&quot; ...
- $ THICKNESS                  : num  1.56 1.56 1.56 9.41 9.41 ...
- $ LAYERS                     : chr  &quot;L_4&quot; &quot;L_4&quot; &quot;L_4&quot; &quot;L_1&quot; ...
- $ COMPONENTS                 : chr  &quot;C1&quot; &quot;C1&quot; &quot;C1&quot; &quot;C2&quot; ...
- $ MASS                       : num  64.3 65.3 66.3 52.8 52.8 ...
- $ AREAL_WEIGHT               : num  1781 1809 1836 5280 5280 ...
- $ BULLET_EXPLOSIVE_SHELL_MASS: num  15.6 15.5 15.6 15.5 15.6 ...
- $ INITIAL_VELOCITY           : num  168 154 157 170 168 ...
- $ FINAL_VELOCITY             : num  153 142 140 165 163 ...
- $ DIFF_IN_VELOCITY           : num  15.5 12.6 16.8 5.4 4.8 4.4 11.5 12.9 11.3 18 ...
- $ ENERGY_ABSORBED            : num  29.2 21.9 29.3 10.6 9.3 ...</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGYwWyFjb21wbGV0ZS5jYXNlcyhkZjApLF1cbmBgYCJ9 -->
-<pre class="r"><code>df0[!complete.cases(df0),]</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibnJvdyI6MCwibmNvbCI6MTEsInN1bW1hcnkiOnsiRGVzY3JpcHRpb24iOlsiZGYgWzAgw5cgMTFdIl19fSwicmRmIjoiSDRzSUFBQUFBQUFBQnAyUlVVL0NNQkRIeTJBYU5zRWxQdm9aV0dKODhiWEFEUnE3am13RDRhbVpNSlU0T3pKRzlOT2pIYlJHSjA4MmFlN3UxL3YzZXRkd09MKzE1aFpDcUlsYWhvR2FwblNST1kyOTNoMlNSQVlOMUVMdHluN0lwQ3ZwMkhJNzZMaTZ5am8xMi8yZi9WWFFGTWxidWxXWDJncmFFZlluRkRqRFBpalVqc2RrY004Z2loUTRvM2dCb1k2c1FlQlBBZ1lzMXFUbDQrL2NDeHdDcHZ3QnlHZ2NLM2JkbjFJS01ZZjVoQVlSbVFHUHhrQXAveUZ6Q0NNeGtjSVowR0JBNG9YaVhZK3d2OVFaRXMvamhOWDVKVEFJUnd1TysxRVE5bUZZRzBDN3lOOWRQWVRPcVFrdHMyU3JKNlNodFVyS3hIMHFwRTVHKzVya1BOK1U2MXhJa1ZIOXBWa1RONG9hdU55SjZnV3IzdkpsSjE1N04xV0J3L0Z4ZFU3NDlyR2s4YW11TXZXM3BPSjVMVkw5OWl4NVRETTlOdG5wb1ZGM1U2eEZxVHVSZE91V2Vabm9QR3VaWjVvY2VrUDdMeVpZRkl2Q0FnQUEifQ== -->
-<div data-pagedtable="false">
-<script data-pagedtable-source type="application/json">
-{"columns":[{"label":["SAMPLE_NAME"],"name":[1],"type":["chr"],"align":["left"]},{"label":["THICKNESS"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["LAYERS"],"name":[3],"type":["chr"],"align":["left"]},{"label":["COMPONENTS"],"name":[4],"type":["chr"],"align":["left"]},{"label":["MASS"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["AREAL_WEIGHT"],"name":[6],"type":["dbl"],"align":["right"]},{"label":["BULLET_EXPLOSIVE_SHELL_MASS"],"name":[7],"type":["dbl"],"align":["right"]},{"label":["INITIAL_VELOCITY"],"name":[8],"type":["dbl"],"align":["right"]},{"label":["FINAL_VELOCITY"],"name":[9],"type":["dbl"],"align":["right"]},{"label":["DIFF_IN_VELOCITY"],"name":[10],"type":["dbl"],"align":["right"]},{"label":["ENERGY_ABSORBED"],"name":[11],"type":["dbl"],"align":["right"]}],"data":[],"options":{"columns":{"min":{},"max":[10],"total":[11]},"rows":{"min":[10],"max":[10],"total":[0]},"pages":{}}}
-  </script>
-</div>
-<!-- rnb-frame-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3VtbWFyeShkZjApICMgdG8gY2hlY2sgY29sdW1ucyB3aXRoIE5BIGFuZCB0aGUgdGFibGUgb2YgZmFjdG9ycyBcbmBgYCJ9 -->
-<pre class="r"><code>summary(df0) # to check columns with NA and the table of factors </code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiIFNBTVBMRV9OQU1FICAgICAgICAgIFRISUNLTkVTUyAgICAgICAgTEFZRVJTICAgICAgICAgICBDT01QT05FTlRTICAgICAgICAgICAgIE1BU1MgICAgICAgICBBUkVBTF9XRUlHSFQgIFxuIExlbmd0aDoyMSAgICAgICAgICBNaW4uICAgOiAxLjU2ICAgTGVuZ3RoOjIxICAgICAgICAgIExlbmd0aDoyMSAgICAgICAgICBNaW4uICAgOiA1Mi44MCAgIE1pbi4gICA6IDE3ODEgIFxuIENsYXNzIDpjaGFyYWN0ZXIgICAxc3QgUXUuOiA5LjQxICAgQ2xhc3MgOmNoYXJhY3RlciAgIENsYXNzIDpjaGFyYWN0ZXIgICAxc3QgUXUuOiA2Ni4yOSAgIDFzdCBRdS46IDUyODAgIFxuIE1vZGUgIDpjaGFyYWN0ZXIgICBNZWRpYW4gOjExLjYwICAgTW9kZSAgOmNoYXJhY3RlciAgIE1vZGUgIDpjaGFyYWN0ZXIgICBNZWRpYW4gOjE4OS4yMCAgIE1lZGlhbiA6IDgwMjIgIFxuICAgICAgICAgICAgICAgICAgICBNZWFuICAgOjEwLjQ2ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBNZWFuICAgOjE3OS40OSAgIE1lYW4gICA6IDkwODEgIFxuICAgICAgICAgICAgICAgICAgICAzcmQgUXUuOjEzLjI2ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAzcmQgUXUuOjI4OS41OSAgIDNyZCBRdS46MTU1ODAgIFxuICAgICAgICAgICAgICAgICAgICBNYXguICAgOjEzLjg4ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBNYXguICAgOjMwOC4xNCAgIE1heC4gICA6MTg5MjAgIFxuIEJVTExFVF9FWFBMT1NJVkVfU0hFTExfTUFTUyBJTklUSUFMX1ZFTE9DSVRZIEZJTkFMX1ZFTE9DSVRZICBESUZGX0lOX1ZFTE9DSVRZIEVORVJHWV9BQlNPUkJFRCAgXG4gTWluLiAgIDoxNS41MyAgICAgICAgICAgICAgIE1pbi4gICA6MTI1LjkgICAgTWluLiAgIDogIDAuMCAgIE1pbi4gICA6ICA0LjQwICAgTWluLiAgIDogIDguNjE0ICBcbiAxc3QgUXUuOjE1LjU3ICAgICAgICAgICAgICAgMXN0IFF1LjoxNTQuMiAgICAxc3QgUXUuOiA5Mi41ICAgMXN0IFF1LjogMTIuNjAgICAxc3QgUXUuOiAyMi4wMTAgIFxuIE1lZGlhbiA6MTUuNjIgICAgICAgICAgICAgICBNZWRpYW4gOjE2MS45ICAgIE1lZGlhbiA6MTI5LjggICBNZWRpYW4gOiAyMi4wMCAgIE1lZGlhbiA6IDM2LjMzNSAgXG4gTWVhbiAgIDoxNS42MiAgICAgICAgICAgICAgIE1lYW4gICA6MTU4LjQgICAgTWVhbiAgIDoxMTAuNSAgIE1lYW4gICA6IDQ3LjkxICAgTWVhbiAgIDogNjAuNzU2ICBcbiAzcmQgUXUuOjE1LjY2ICAgICAgICAgICAgICAgM3JkIFF1LjoxNjguMSAgICAzcmQgUXUuOjE1MC40ICAgM3JkIFF1LjogNzIuMTAgICAzcmQgUXUuOiA5Mi45NjUgIFxuIE1heC4gICA6MTUuNzQgICAgICAgICAgICAgICBNYXguICAgOjE3Ni4wICAgIE1heC4gICA6MTY0LjcgICBNYXguICAgOjE2MS4yMCAgIE1heC4gICA6MTcwLjM2OCAgXG4ifQ== -->
-<pre><code> SAMPLE_NAME          THICKNESS        LAYERS           COMPONENTS             MASS         AREAL_WEIGHT  
- Length:21          Min.   : 1.56   Length:21          Length:21          Min.   : 52.80   Min.   : 1781  
- Class :character   1st Qu.: 9.41   Class :character   Class :character   1st Qu.: 66.29   1st Qu.: 5280  
- Mode  :character   Median :11.60   Mode  :character   Mode  :character   Median :189.20   Median : 8022  
-                    Mean   :10.46                                         Mean   :179.49   Mean   : 9081  
-                    3rd Qu.:13.26                                         3rd Qu.:289.59   3rd Qu.:15580  
-                    Max.   :13.88                                         Max.   :308.14   Max.   :18920  
- BULLET_EXPLOSIVE_SHELL_MASS INITIAL_VELOCITY FINAL_VELOCITY  DIFF_IN_VELOCITY ENERGY_ABSORBED  
- Min.   :15.53               Min.   :125.9    Min.   :  0.0   Min.   :  4.40   Min.   :  8.614  
- 1st Qu.:15.57               1st Qu.:154.2    1st Qu.: 92.5   1st Qu.: 12.60   1st Qu.: 22.010  
- Median :15.62               Median :161.9    Median :129.8   Median : 22.00   Median : 36.335  
- Mean   :15.62               Mean   :158.4    Mean   :110.5   Mean   : 47.91   Mean   : 60.756  
- 3rd Qu.:15.66               3rd Qu.:168.1    3rd Qu.:150.4   3rd Qu.: 72.10   3rd Qu.: 92.965  
- Max.   :15.74               Max.   :176.0    Max.   :164.7   Max.   :161.20   Max.   :170.368  </code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGltKGRmMClcbmBgYCJ9 -->
-<pre class="r"><code>dim(df0)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDIxIDExXG4ifQ== -->
-<pre><code>[1] 21 11</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShza2ltcilcbnNraW0oZGYwKVxuYGBgIn0= -->
-<pre class="r"><code>library(skimr)
-skim(df0)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoi4pSA4pSAIERhdGEgU3VtbWFyeSDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIBcbiAgICAgICAgICAgICAgICAgICAgICAgICAgIFZhbHVlc1xuTmFtZSAgICAgICAgICAgICAgICAgICAgICAgZGYwICAgXG5OdW1iZXIgb2Ygcm93cyAgICAgICAgICAgICAyMSAgICBcbk51bWJlciBvZiBjb2x1bW5zICAgICAgICAgIDExICAgIFxuX19fX19fX19fX19fX19fX19fX19fX18gICAgICAgICAgXG5Db2x1bW4gdHlwZSBmcmVxdWVuY3k6ICAgICAgICAgICBcbiAgY2hhcmFjdGVyICAgICAgICAgICAgICAgIDMgICAgIFxuICBudW1lcmljICAgICAgICAgICAgICAgICAgOCAgICAgXG5fX19fX19fX19fX19fX19fX19fX19fX18gICAgICAgICBcbkdyb3VwIHZhcmlhYmxlcyAgICAgICAgICAgIE5vbmUgIFxuIn0= -->
-<pre><code>── Data Summary ────────────────────────
-                           Values
-Name                       df0   
-Number of rows             21    
-Number of columns          11    
-_______________________          
-Column type frequency:           
-  character                3     
-  numeric                  8     
-________________________         
-Group variables            None  </code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbIm9uZV9za2ltX2RmIiwidGJsX2RmIiwidGJsIiwiZGF0YS5mcmFtZSJdLCJucm93IjozLCJuY29sIjo4LCJzdW1tYXJ5Ijp7IkEgdGliYmxlIjpbIjMgw5cgOCJdfX0sInJkZiI6Ikg0c0lBQUFBQUFBQUJxMVRYVy9hTUJRMUllRWppRzVTMVo4Qm9wdXE3VzFDRzNzcXRDcWQxRDI1SmpGZ2tUaWU3YXpsclQ5NWY2QmxkdkJsd2V2REhoYko4YjNIeDllKzl4N2ZmTGw3SDkvRkNLRW1Db01BTlNOam91amI3ZGZCUjJRUTR6UlFpTHAyZmpTa1UyTjB6SGk3MzFFdDlPYmo2ZlhsQk0vRzA0bURXcGZqNzVPYnVmUGl6MWZUNjZ2WlpIWTdOMTYvMm5yOG5WanMwNis5NDgrMVBhR2JneHJXYzFlcVkvVVBzTGFibTYvempuS05PTW1wY25sMkhOaFhHNWJqbjBReXNzaW9BN3NjNTB3cHhsZkFTb3BjWkZSVExJa0dWak5uL0dDU1J6aUY1a0p2bmRQaHVPVHNSd2xiNG9jMTAxUUprbER2Y2wxWlBBemhnamFUNE1uOGRydmRzMDlNaVNiWXNJSFlNT1BzVlZKU1pIVlN6eU8xMHlXMko3cUtITXAwbnk1SDl4NjNsV3E4b1Z1YmdrV2YvcTV1YXlXTFVrQjUvZFgrZ2lpS2JhMXpLb0VVL0dPNXZWQVFCWmVLcGliS3FkT0pEUm45cDk0Y2FTVE1LWUZvZ1VyQkVpTTRRYnk3T0pnWGY5QVBnSWJpZkFSd3VHWks3MU1LZG40aGtqV1JKTkZVUW90NGFUSmxpVEZmL0JaWHd0VmI0ZmV2RnNUVGY1SVJwVHgyYkpVeVhNcTlEdnhEMm9YUXJPREtWVG55Tmpla0I3d3B1VlZVT2tqV0pkOE16a0V2Ym9BU216Vzc0OVVDT3RpaWZNVTROQ2ZLeUlKbXpqa3g2cStleWxCSXhqVmtZdC9FVUJlYUFDKzJEOEFoVlc3bzVUZmgyb3pNR3dVQUFBPT0ifQ== -->
-<div data-pagedtable="false">
-<script data-pagedtable-source type="application/json">
-{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["skim_variable"],"name":[1],"type":["chr"],"align":["left"]},{"label":["n_missing"],"name":[2],"type":["int"],"align":["right"]},{"label":["complete_rate"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["min"],"name":[4],"type":["int"],"align":["right"]},{"label":["max"],"name":[5],"type":["int"],"align":["right"]},{"label":["empty"],"name":[6],"type":["int"],"align":["right"]},{"label":["n_unique"],"name":[7],"type":["int"],"align":["right"]},{"label":["whitespace"],"name":[8],"type":["int"],"align":["right"]}],"data":[{"1":"SAMPLE_NAME","2":"0","3":"1","4":"4","5":"11","6":"0","7":"7","8":"0","_rn_":"1"},{"1":"LAYERS","2":"0","3":"1","4":"3","5":"8","6":"0","7":"3","8":"0","_rn_":"2"},{"1":"COMPONENTS","2":"0","3":"1","4":"2","5":"2","6":"0","7":"3","8":"0","_rn_":"3"}],"options":{"columns":{"min":{},"max":[10],"total":[8]},"rows":{"min":[10],"max":[10],"total":[3]},"pages":{}}}
-  </script>
-</div>
-<!-- rnb-frame-end -->
-<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbIm9uZV9za2ltX2RmIiwidGJsX2RmIiwidGJsIiwiZGF0YS5mcmFtZSJdLCJucm93Ijo4LCJuY29sIjoxMSwic3VtbWFyeSI6eyJBIHRpYmJsZSI6WyI4IMOXIDExIl19fSwicmRmIjoiSDRzSUFBQUFBQUFBQmd0eWlURG1pdUJpWUdCZ1ptQmhZbUpnWmdVeUdWaERROXgwTFJpQUlrQU9Jd01MQXllSXJnQXFFZ1l5dUlGWUFJZzVvQktjSVI2ZXp0NStyc0hCVUFFV1gwYzRtOGN4eU5YUkp6N2MxZFBkSXdRcUp1MFU2dVBqR2hMdkdoSGc0eC9zR2VZYUgremg2dU1UajZSTndOUFBNOFFUcURITTFjZmYyVE1rRWlyTzUrYnBoeWtxNE9McDVoYnY2WWN1enUvcTV4cmtIaG52NkJUc0grVGs2Z0lVNGdVN25ERGdBNm16L3dEaGtFdkR6SEZRZWZON1R0dFVNNGUwL0s0ZjY3dCtPaHpjNC80MjFqM2VRZCthYmRkS2FWT0g1SE5CVC9XQ25qcEVMeXBRWnlwUWQzRC9rdTIySmR2ZHdTL2hTTVdpemU1d2MvalAzeEFQVkpaekNDL0o2TjBwMmVHd3JhRkFJUE5ybnYzYWxqdHlyc3BxRHBwTjdHdXY2cGc0ZUhYTzBuNlNKT2pnRWVDcXRXYUJsNE9ubE9xRVByRVhjSC85K0hxb1AwYmptNE5YR2hnNHpMN2N2Ym5scjVhRFB1K2xqeXQvUDNlSXI1d0pCTE5nbm5BUW5Bbm1PeWhhSlY5TTJPQUNkNC9TeGRldGNqdUNIQUltQVkzN2V0aGh5d0tJZW4yVnUvcFM4L2M1Skx0QnpBOVhnSWhyR29PQmd4bFQvYzR2VFYvZzVxaER4ZE9YUWRUdkQzMWtIaEg5eUVIZkpxdnU1MjFsaHhTYk0wQncxaUhCRXVJT002aTduTFR1K015WmNCUnVqbFlUeEIxRmtnV0xyM1BaT3B6TGc3b25FT0xPVkdhSVBVbG5JT1lGc1VIZFozdG9rcGo0VExnNTJnY2crb3FkYkVFR09WeXFncHBUY2VYdjUyMXVEbWxRKzFPbVFmU25xRUhvVk85akFsS2E1UXl3RE1MUUFFNkdqNlkxUFpyV0NFYk5qNmExSTRSYndXTHRZTElWUlhVN1hBTkN1QjBKTlNHRUc4RWEyaUF5S0laQUVLcVY3VERIZ0VnVTRVYVloa2Ewbk0rYWw1aWJXZ3oxRkRkVWtMYzRPek0zdml5eEtETXhLU2NWVmhUa3hlZG1GaGRuNXFYRFZDWG41eGJrcEpha3hoY2xsc0JVc2VTbUp1WkIyVXpGS1RCV2dRR1V4VnhnWkFwbm1pSkV6V0dpTEFXR0JqQmhsb3pNNGhJMEIzTVc1WmZyd1J3Tnl2Rk1EVURpLy8vL1A5QVZwaVNXSk1ZRFZjTVVNZ0t4S0ZaRnlmazV5SXE0MFJTeHA2VEZnMnlFaGhJODZCSlMwZ3dTME5TeXBaVEVaNmRXQWxtZ2dwZXhBWnlXVUZXa0YrV1hGc0NDSEYyV055bXhPRFVlRlA2NXFVVXdSVXhFUmdHYVVUQlQ0a3VMVTFPQXBnaURqWUlZeVFvTCtkek1QRGd6c1FMbXRkVGNncEpLS0ljakw3NDBMN093RkJiRlhPVVptU1dweFFXSnliQVE0YUJ4NURQOVJ3K0k1SXpFb3NUa2t0UWlXQlRsbFFKOW1wa01aUDVEajJKd1lpNnBMRUNQUDRRZTFCeVJuSk5ZWEl5bWxndVVUdlRTaWlDcEFOMEs5dnlDa3N6OHZHSm9HTE9pYVdZc1FoUGdMODBEcGFjVTNlU00wcnhzWFVOWWFvRmlXRHJrd0V5VDhKQ0F4UjliYWw1NlpoNHNhbGh6RXBOU2MyRDFLVER0Z3pPS1hrRlJabDRKekNlZ0hLRlhrbCtTQ0ZQSEJVcitVQkd3M3hqK0FRRFFQbkNnT3dnQUFBPT0ifQ== -->
-<div data-pagedtable="false">
-<script data-pagedtable-source type="application/json">
-{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["skim_variable"],"name":[1],"type":["chr"],"align":["left"]},{"label":["n_missing"],"name":[2],"type":["int"],"align":["right"]},{"label":["complete_rate"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["mean"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["sd"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["p0"],"name":[6],"type":["dbl"],"align":["right"]},{"label":["p25"],"name":[7],"type":["dbl"],"align":["right"]},{"label":["p50"],"name":[8],"type":["dbl"],"align":["right"]},{"label":["p75"],"name":[9],"type":["dbl"],"align":["right"]},{"label":["p100"],"name":[10],"type":["dbl"],"align":["right"]},{"label":["hist"],"name":[11],"type":["chr"],"align":["left"]}],"data":[{"1":"THICKNESS","2":"0","3":"1","4":"10.46286","5":"3.976486e+00","6":"1.560000","7":"9.41000","8":"11.60000","9":"13.255","10":"13.8750","11":"▂▁▁▃▇","_rn_":"1"},{"1":"MASS","2":"0","3":"1","4":"179.48571","5":"9.381888e+01","6":"52.800000","7":"66.29000","8":"189.20000","9":"289.590","10":"308.1400","11":"▅▁▇▁▅","_rn_":"2"},{"1":"AREAL_WEIGHT","2":"0","3":"1","4":"9080.56193","5":"5.760438e+03","6":"1780.886427","7":"5280.00000","8":"8021.88366","9":"15580.000","10":"18920.0000","11":"▂▇▁▁▃","_rn_":"3"},{"1":"BULLET_EXPLOSIVE_SHELL_MASS","2":"0","3":"1","4":"15.61529","5":"5.765427e-02","6":"15.527000","7":"15.57200","8":"15.61800","9":"15.660","10":"15.7360","11":"▇▇▇▇▂","_rn_":"4"},{"1":"INITIAL_VELOCITY","2":"0","3":"1","4":"158.44762","5":"1.275396e+01","6":"125.900000","7":"154.20000","8":"161.90000","9":"168.100","10":"176.0000","11":"▁▂▆▇▇","_rn_":"5"},{"1":"FINAL_VELOCITY","2":"0","3":"1","4":"110.53810","5":"5.307502e+01","6":"0.000000","7":"92.50000","8":"129.80000","9":"150.400","10":"164.7000","11":"▂▂▂▃▇","_rn_":"6"},{"1":"DIFF_IN_VELOCITY","2":"0","3":"1","4":"47.90952","5":"4.862711e+01","6":"4.400000","7":"12.60000","8":"22.00000","9":"72.100","10":"161.2000","11":"▇▂▁▂▁","_rn_":"7"},{"1":"ENERGY_ABSORBED","2":"0","3":"1","4":"60.75600","5":"5.020427e+01","6":"8.614043","7":"22.00976","8":"36.33485","9":"92.965","10":"170.3679","11":"▇▁▂▂▁","_rn_":"8"}],"options":{"columns":{"min":{},"max":[10],"total":[11]},"rows":{"min":[10],"max":[10],"total":[8]},"pages":{}}}
-  </script>
-</div>
-<!-- rnb-frame-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBsaWJyYXJ5KERhdGFFeHBsb3JlcilcbiMgRGF0YUV4cGxvcmVyOjpjcmVhdGVfcmVwb3J0KGRmMClcbmBgYCJ9 -->
-<pre class="r"><code># library(DataExplorer)
+head(df0,1)
+str(df0)
+df0[!complete.cases(df0),]
+summary(df0) # to check columns with NA and the table of factors 
+dim(df0)
+library(skimr)
+skim(df0)
+# library(DataExplorer)
 # DataExplorer::create_report(df0)</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIk1FQ0ggNjkxIFMgLSBJbXBhY3QgYmVqYXZpb3Igb2YgQ29tcG9zaXRlIFNhbmR3aWNoIFBhbmVscyINCmF1dGhvcjogIk1vaGFtbWFkIEdoYWRyaSAtIDQwMTk2MTQ0Ig0KZGF0ZTogMDIvMTIvMjAyMyANCm91dHB1dDogDQogIGh0bWxfbm90ZWJvb2s6DQogICAgICAgICAgdG9jOiB5ZXMNCiAgICAgICAgICB0b2NfZmxvYXQ6IHllcw0KLS0tDQpgYGB7cn0NCmRmMCA9IHJlYWQuY3N2KCJJbXBhY3RfdGVzdC5jc3YiKQ0KIyBWaWV3KGRmMCkNCmhlYWQoZGYwLDEpDQpzdHIoZGYwKQ0KZGYwWyFjb21wbGV0ZS5jYXNlcyhkZjApLF0NCnN1bW1hcnkoZGYwKSAjIHRvIGNoZWNrIGNvbHVtbnMgd2l0aCBOQSBhbmQgdGhlIHRhYmxlIG9mIGZhY3RvcnMgDQpkaW0oZGYwKQ0KbGlicmFyeShza2ltcikNCnNraW0oZGYwKQ0KIyBsaWJyYXJ5KERhdGFFeHBsb3JlcikNCiMgRGF0YUV4cGxvcmVyOjpjcmVhdGVfcmVwb3J0KGRmMCkNCmBgYA0KDQo=</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIk1FQ0ggNjkxIFMgLSBJbXBhY3QgYmVqYXZpb3Igb2YgQ29tcG9zaXRlIFNhbmR3aWNoIFBhbmVscyINCmRhdGU6IDAyLzEyLzIwMjMgDQpvdXRwdXQ6IA0KICBodG1sX25vdGVib29rOg0KICAgICAgICAgIHRvYzogeWVzDQogICAgICAgICAgdG9jX2Zsb2F0OiB5ZXMNCi0tLQ0KYGBge3J9DQpkZjAgPSByZWFkLmNzdigiSW1wYWN0X3Rlc3QuY3N2IikNCiMgVmlldyhkZjApDQpoZWFkKGRmMCwxKQ0Kc3RyKGRmMCkNCmRmMFshY29tcGxldGUuY2FzZXMoZGYwKSxdDQpzdW1tYXJ5KGRmMCkgIyB0byBjaGVjayBjb2x1bW5zIHdpdGggTkEgYW5kIHRoZSB0YWJsZSBvZiBmYWN0b3JzIA0KZGltKGRmMCkNCmxpYnJhcnkoc2tpbXIpDQpza2ltKGRmMCkNCiMgbGlicmFyeShEYXRhRXhwbG9yZXIpDQojIERhdGFFeHBsb3Jlcjo6Y3JlYXRlX3JlcG9ydChkZjApDQpgYGANCg0K</div>
 
 
 </div>

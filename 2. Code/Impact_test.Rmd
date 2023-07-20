@@ -1,6 +1,5 @@
 ---
 title: "MECH 691 S - Impact bejavior of Composite Sandwich Panels"
-author: "Mohammad Ghadri - 40196144"
 date: 02/12/2023 
 output: 
   html_notebook:
