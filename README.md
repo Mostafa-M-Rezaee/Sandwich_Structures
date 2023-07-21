@@ -13,7 +13,6 @@ Folder PATH listing
 Sandwich_Structure:.
 ¦   .gitignore
 ¦   README.md
-¦   tree.txt
 ¦   
 +---.git
 ¦   
